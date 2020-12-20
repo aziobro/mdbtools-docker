@@ -1,5 +1,6 @@
 FROM debian
 RUN apt update
+RUN apt upgrade
 ENV DEBIAN_FRONTEND=noninteractive
 RUN ln -fs /usr/share/zoneinfo/America/New_York /etc/localtime
 RUN apt install git libtool automake autoconf gettext bison flex unixodbc pkg-config gawk g++ build-essential -y
